@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #555;
+}
+
+/* Digitální */
+#digitalClock {
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+/* Analogové */
+.clock {
+    width: 250px;
+    height: 250px;
+    border: 8px solid white;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    background: #111;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+}
+
+.hour {
+    width: 6px;
+    height: 70px;
+    background: white;
+}
+
+.minute {
+    width: 4px;
+    height: 90px;
+    background: cyan;
+}
+
+.second {
+    width: 2px;
+    height: 100px;
+    background: red;
+}
+
+.center {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Stopky + odpočítávání */
+.timer {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.start {
+    background: green;
+    color: white;
+}
+
+.stop {
+    background: red;
+    color: white;
+}
+
+.reset {
+    background: gray;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 120px;
+    text-align: center;
+}
